@@ -1,39 +1,66 @@
-# ShipFast — Javascript
+# Shrinkage
 
-Hey maker 👋 it's Marc from [ShipFast](https://shipfa.st/docs). Let's get your startup off the ground, FAST ⚡️
+Professional image compression web app built with Next.js and Supabase.
 
-<sub>**Watch/Star the repo to be notified when updates are pushed**</sub>
+## Features
+- Drag-and-drop interface with bulk uploads
+- Support for JPEG, PNG, GIF, and WebP formats
+- Client-side compression using Web Workers
+- Free and Pro tiers with different capabilities
+- Real-time compression progress tracking
+- Before/after size comparison
 
-## Get Started
+### Free Tier
+- Up to 20 images per session
+- Max file size: 5MB
+- Basic compression options
+- Browser-only processing
+- Basic formats (JPEG, PNG, GIF)
 
-1. Follow the [Get Started Tutorial](https://shipfa.st/docs) to clone the repo and run your local server 💻
+### Pro Tier ($9.99/month)
+- Unlimited images/month
+- Max file size: 75MB
+- Advanced compression settings
+- API access
+- All formats including AVIF, WebP
+- Bulk processing
 
-<sub>**Looking for the /pages router version?** Use this [documentation](https://shipfa.st/docs-old) instead</sub>
+## Tech Stack
+- Next.js 14
+- Supabase for authentication and database
+- TailwindCSS with DaisyUI
+- Web Workers for client-side compression
+- Stripe for payment processing
 
-2. Follow the [Ship In 5 Minutes Tutorial](https://shipfa.st/docs/tutorials/ship-in-5-minutes) to learn the foundation and ship your app quickly ⚡️
+## Getting Started
 
-## Links
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/shrinkage.git
+cd shrinkage
+```
 
--   [📚 Documentation](https://shipfa.st/docs)
--   [📣 Updates](https://shipfast.beehiiv.com/)
--   [🧑‍💻 Discord](https://shipfa.st/dashboard)
--   [🥇 Leaderboard](https://shipfa.st/leaderboard)
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Support
+3. Set up environment variables:
+- Copy `.env.example` to `.env.local`
+- Update the variables with your credentials:
+  - Supabase configuration
+  - Stripe keys (for Pro tier)
+  - Other service credentials
 
-Reach out at hello@shipfa.st
+4. Run the development server:
+```bash
+npm run dev
+```
 
-Let's ship it, FAST ⚡️
+Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-\_
+## Development
+Project structure and contribution guidelines will be added as the project evolves.
 
-**📈 Grow your startup with [DataFast](https://datafa.st?ref=shipfast_readme)**
-
--   Analyze your traffic
--   Get insights on your customers
--   Make data-driven decisions
-
-ShipFast members get 30% OFF on all plans! 🎁
-
-![datafast](https://github.com/user-attachments/assets/a6e78034-701a-49f1-a297-d33590f963be)
-
+## License
+MIT
